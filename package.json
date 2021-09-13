@@ -1,6 +1,6 @@
 {
   "name": "trees-plus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Operations related to tree data",
   "repository": {
     "url": "https://github.com/carrynie/trees-plus.git"
@@ -23,8 +23,5 @@
     "dist",
     "package.json",
     "README.md"
-  ],
-  "dependencies": {
-    "trees-plus": "^1.0.1"
-  }
+  ]
 }
