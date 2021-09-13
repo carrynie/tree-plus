@@ -1,0 +1,22 @@
+{
+  "name": "tree-plus",
+  "version": "1.0.0",
+  "description": "Operations related to tree data",
+  "repository": {
+    "url": "https://github.com/carrynie/tree-plus.git"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "keywords": [
+    "tree",
+    "json",
+    "list"
+  ],
+  "author": "carrynie",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
+}
