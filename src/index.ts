@@ -15,7 +15,7 @@ const cloneDeep = <T>(data: T): T => {
     return JSON.parse(JSON.stringify(data))
 }
 
-export default class TreePlus {
+export default class TreesPlus {
     private static getTopList (list: DataObj[], option: Option): DataObj[] {
         return list.filter(item => item[option.parentKey] === option.topValue)
     }

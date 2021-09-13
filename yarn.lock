@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+trees-plus@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/trees-plus/-/trees-plus-1.0.1.tgz#3a659400757bd6865f86939b3b6f216a00e0a2b5"
+  integrity sha512-wm0XaBdWWh50wFqUnwdBiQUHMlA09D8hjtTpc9H5aa/n8a9gjwG7nX3yCuZrAWNmkcBExbXK9GHPg7H7Arhy0w==
+
 typescript@^4.4.3:
   version "4.4.3"
   resolved "https://registry.nlark.com/typescript/download/typescript-4.4.3.tgz#bdc5407caa2b109efd4f82fe130656f977a29324"

@@ -1,9 +1,9 @@
 {
-  "name": "tree-plus",
-  "version": "1.0.0",
+  "name": "trees-plus",
+  "version": "1.0.2",
   "description": "Operations related to tree data",
   "repository": {
-    "url": "https://github.com/carrynie/tree-plus.git"
+    "url": "https://github.com/carrynie/trees-plus.git"
   },
   "main": "dist/index.js",
   "scripts": {
@@ -18,5 +18,13 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^4.4.3"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "trees-plus": "^1.0.1"
   }
 }

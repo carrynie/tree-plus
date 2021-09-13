@@ -1,50 +1,59 @@
-# no-loss-accuracy
+# trees-plus
 Operations related to tree data
 
 ### Install
 
 ``` javascript
-$ npm i tree-plus -S
+$ npm i trees-plus -S
 ```
 
 ### Import
 
 ``` javascript
-import TreePlus from "tree-plus"
+import TreesPlus from "trees-plus"
 ```
 
 ### Usage
 
 ``` javascript
-import TreePlus from "tree-plus"
+import TreesPlus from "trees-plus"
+```
+* TreesPlus.format（列表转树形数据）
 
-const treeData = TreePlus.format(data) // 列表转树形数据
-const traceParents = TreePlus.trace(data) // 找到当前条目的所有上级并返回集合
+``` javascript
+const treeData = TreesPlus.format(data)
+```
 
-// 自定义option
+* TreesPlus.trace（找到当前条目的所有上级并返回集合）
+``` javascript
+const traceParents = TreesPlus.trace(data)
+```
+
+* 自定义option
+``` javascript
 const option = {
     idKey: 'your id name', // 默认 'id'
     parentKey: 'your parent id name', // 默认 'parentId'
     topValue: 'your top parent id' // 默认 0
 }
 
-const treeData = TreePlus.format(data, option)
-const traceParents = TreePlus.trace(data, option)
+const treeData = TreesPlus.format(data, option)
+const traceParents = TreesPlus.trace(data, option)
 
 ```
 
 ### Demo
 
 ``` javascript
-import TreePlus, { DataObj, Option } from "tree-plus"
+import TreesPlus, { DataObj, Option } from "trees-plus"
 
-interface DataObj {
+interface Data {
     id: number
     parentId: number
     name: string
 }
 
-const data: DataObj[] = [
+const data: Data[] = [
     { id: 1, parentId: 0, name: 'level-top' },
     { id: 2, parentId: 1, name: 'level-1' },
     { id: 3, parentId: 1, name: 'level-2' },
@@ -57,8 +66,8 @@ const option: Option = { // 默认option
     topValue: 0
 }
 
-const treeData = TreePlus.format(data, option) // DataObj[]
-const traceParents= TreePlus.trace(data, data[3], option) // DataObj[]
+const treeData = TreesPlus.format(data, option) // DataObj[]
+const traceParents= TreesPlus.trace(data, data[3], option) // DataObj[]
 
 console.log(treeData, traceParents)
 

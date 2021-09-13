@@ -1,4 +1,4 @@
-import TreePlus from "."
+import TreesPlus from "."
 
 interface Obj {
     id: number
@@ -13,13 +13,13 @@ const data: Obj[] = [
     { id: 4, parentId: 3, name: 'level-2-1' },
 ]
 
-const treeData = TreePlus.format(data, {
+const treeData = TreesPlus.format(data, {
     idKey: 'id',
     parentKey: 'parentId',
     topValue: 0
 })
 
-const traceParents = TreePlus.trace(data, data[3], {
+const traceParents = TreesPlus.trace(data, data[3], {
     idKey: 'id',
     parentKey: 'parentId',
     topValue: 0
